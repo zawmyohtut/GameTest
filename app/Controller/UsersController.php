@@ -82,7 +82,7 @@
 				$this->User->create();
 				
 				if($this->User->save($this->request->data)){
-					
+				/*	
 					$userEmail = $this->request->data['User']['email'];
 					$this->Email->to = $userEmail;
 					$this->Email->subject = "Registering Testing";
@@ -102,6 +102,7 @@
 					else{
 						echo $this->Email->smtpError;
 					}
+					*/
 					$this->redirect('index');	
 				}
 				else{
