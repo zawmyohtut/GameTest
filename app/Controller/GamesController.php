@@ -1,7 +1,8 @@
 <?php 
 
 	class GamesController extends AppController
-	{						
+	{				
+
 		public function index(){
 
 			$data = $this->Game->find('all');
@@ -13,8 +14,7 @@
 					'count'=> $count
 				);
 
-			$this->set($gameInformation);
-
+			$this->set($gameInformation);	
 		}
 
 		public function view($id = null){

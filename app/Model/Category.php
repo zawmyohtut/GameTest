@@ -5,14 +5,6 @@
 		public $hasMany = 'Game';
 		//public $displayField = "length_type";  to display this specific column from the database while using find('list') query
 
-
-		//public $validate = array(
-
-		//	'name' => 'notEmpty',
-		//	'length_type' => 'notEmpty'
-		//	);
-
-
 		public $validate = array(
 
 				'name' => array(

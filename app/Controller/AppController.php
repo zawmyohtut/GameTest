@@ -32,7 +32,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-	public $components = array('Session','Auth');
+	public $components = array('Session','Auth','Email');
 
 	public function beforeFilter(){
 

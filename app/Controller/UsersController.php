@@ -1,7 +1,7 @@
 <?php 
 
 	class UsersController extends AppController
-	{		
+	{				
 		public function beforeFilter(){
 
 			parent::beforeFilter();
@@ -71,6 +71,8 @@
 			$this->set('user',$data);
 		}
 
+
+		//User Registering
 		public function add(){
 
 			$this->set('title_for_layout','Add new user');
@@ -81,7 +83,25 @@
 				
 				if($this->User->save($this->request->data)){
 					
-					// send email to user email to notify registering is successful
+					$userEmail = $this->request->data['User']['email'];
+					$this->Email->to = $userEmail;
+					$this->Email->subject = "Registering Testing";
+					$this->Email->from = "zawmyohtut@gmail.com";
+					$this->Email->smtpOptions = array(
+							'port' => '465',
+							'timeout' => '30',
+							'host' => 'ssl://smtp.gmail.com',
+							'username' => 'zawmyohtut@gmail',
+							'password' => 'whyalwaysme12345',
+					);
+
+					$this->Email->delivery = 'smtp';
+					if($this->Email->send()){
+						return true;
+					}
+					else{
+						echo $this->Email->smtpError;
+					}
 					$this->redirect('index');	
 				}
 				else{
