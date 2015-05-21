@@ -183,28 +183,15 @@
 				$this->User->create();
 				
 				if($this->User->save($this->request->data)){
-				/*	
-					$userEmail = $this->request->data['User']['email'];
-					$this->Email->to = $userEmail;
-					$this->Email->subject = "Registering Testing";
-					$this->Email->from = "zawmyohtut@gmail.com";
-					$this->Email->smtpOptions = array(
-							'port' => '465',
-							'timeout' => '30',
-							'host' => 'ssl://smtp.gmail.com',
-							'username' => 'zawmyohtut@gmail',
-							'password' => 'whyalwaysme12345',
-					);
-
-					$this->Email->delivery = 'smtp';
-					if($this->Email->send()){
-						return true;
-					}
-					else{
-						echo $this->Email->smtpError;
-					}
-					*/
-					$this->redirect('index');	
+					
+					// send email to registered email.Uses gmail ssl.
+					$Email = new CakeEmail('gmail');
+					$Email->from(array('zaw@intersetive.com' => 'Game Test'));
+					$Email->to($this->request->data['User']['email']);
+					$Email->subject('Thanks for Registering!');
+					$Email->send('Start managing your games right away!');
+					$this->Session->setFlash("User Registration successful");
+					$this->redirect('index');		
 				}
 				else{
 
