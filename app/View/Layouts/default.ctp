@@ -36,6 +36,7 @@
 <li><a href="/GameTest/Users/logout">Log Out</a></li>	
 <?php else: ?>
 <li><a href="/GameTest/Users/login">Log In</a></li>	
+<li><a class="btn btn-default facebook" href="<?php echo BASE_PATH.'fblogin'; ?>"> Signin with Facebook </a></li>
 <?php endif;?>
 
 <li><a href="/GameTest/Games">Games</a></li>

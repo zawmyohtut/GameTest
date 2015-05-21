@@ -30,14 +30,19 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
+
+session_start();
+
 class AppController extends Controller {
+
 
 	public $components = array('Session','Auth','Email');
 
+	//Called first before all other controllers are called.
 	public function beforeFilter(){
 
 		// will allow index and view actions of every controllers to be accessible even if not logged in.
-		$this->Auth->allow('index','view'); 
+		$this->Auth->allow('index','view','fblogin','fb_login'); 
 
-	}
+	}	
 }
