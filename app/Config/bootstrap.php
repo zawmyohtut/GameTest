@@ -93,6 +93,9 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
+
+require_once 'site_config.php';
+
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'
