@@ -1,11 +1,112 @@
 <?php 
 
+	define('FACEBOOK_SDK_V4_SRC_DIR','../Vendor/fb/src/Facebook/');
+	require_once("../Vendor/fb/autoload.php");
+	use Facebook\FacebookSession;
+	use Facebook\FacebookRedirectLoginHelper;
+	use Facebook\FacebookRequest;
+	use Facebook\FacebookResponse;
+	use Facebook\FacebookSDKException;
+	use Facebook\FacebookRequestException;
+	use Facebook\FacebookAuthorizationException;
+	use Facebook\GraphObject;
+	use Facebook\GraphUser;
+	use Facebook\GraphSessionInfo;
+
 	class UsersController extends AppController
 	{				
 		public function beforeFilter(){
 
 			parent::beforeFilter();
 			$this->Auth->allow('add');
+		}
+
+		//make OAuth login request to facebook.
+		public function fblogin(){
+
+			$this->autoRender = false;	
+			if (session_status() == PHP_SESSION_NONE) {
+				session_start();
+			}
+			FacebookSession::setDefaultApplication(FACEBOOK_APP_ID, FACEBOOK_APP_SECRET);
+			$helper = new FacebookRedirectLoginHelper(FACEBOOK_REDIRECT_URI);
+			$url = $helper->getLoginUrl(array('email'));
+			$this->redirect($url);
+
+		}
+
+		//handle fb OAuth login response from facebook
+		public function fb_login(){
+
+			$this->layout = 'ajax';
+			FacebookSession::setDefaultApplication(FACEBOOK_APP_ID, FACEBOOK_APP_SECRET);
+			$helper = new FacebookRedirectLoginHelper(FACEBOOK_REDIRECT_URI);
+			$session = $helper->getSessionFromRedirect();
+
+			if(isset($_SESSION['token'])){
+				$session = new FacebookSession($_SESSION['token']);
+				try{
+					$session->validate(FACEBOOK_APP_ID, FACEBOOK_APP_SECRET);
+				}catch(FacebookAuthorizationException $e){
+				//	echo $e->getMessage();
+					$this->Session->setFlash($e->getMessage());
+					$this->redirect(BASE_PATH.'login');
+				}
+			}
+
+			$data = array();
+			$fb_data = array();
+
+			if(isset($session)){
+				$_SESSION['token'] = $session->getToken();
+				$request = new FacebookRequest($session, 'GET', '/me');
+				$response = $request->execute();
+				$graph = $response->getGraphObject(GraphUser::className());
+
+				$fb_data = $graph->asArray();
+				$id = $graph->getId();
+				$image = "https://graph.facebook.com/".$id."/picture?width=100";
+
+				if( !empty( $fb_data )){
+					$result = $this->User->findByEmail( $fb_data['email'] );
+					if(!empty( $result )){
+						if($this->Auth->login($result['User'])){
+							$this->Session->setFlash('You have successfully signed in with the facebook account!');
+							$this->redirect(BASE_PATH);
+						}else{
+							$this->Session->setFlash('Failed to sign in using facebook account!');
+							$this->redirect(BASE_PATH.'login');
+						}
+
+					}else{
+						
+						$data['email'] = $fb_data['email'];
+						$data['first_name'] = $fb_data['first_name'];
+						$data['social_id'] = $fb_data['id'];
+						$data['picture'] = $image;
+						$data['uuid'] = String::uuid ();
+						$this->User->save( $data );
+						if($this->User->save( $data )){
+							$data['id'] = $this->User->getLastInsertID();
+							if($this->Auth->login($data)){
+								$this->Session->setFlash('You have successfully signed in with the facebook account!');
+								$this->redirect(BASE_PATH);
+							}else{
+								$this->Session->setFlash('Failed to sign in using facebook account!');
+								$this->redirect(BASE_PATH.'index');
+							}
+
+						}else{
+							$this->Session->setFlash('Failed to sign in using facebook account!');
+							$this->redirect(BASE_PATH.'index');
+						}
+					}
+
+				}else{
+					$this->Session->setFlash('Failed to sign in using facebook account!');
+					$this->redirect(BASE_PATH.'index');
+				}
+			}
 		}
 
 		public function login(){
@@ -83,26 +184,14 @@
 				
 				if($this->User->save($this->request->data)){
 					
-					$userEmail = $this->request->data['User']['email'];
-					$this->Email->to = $userEmail;
-					$this->Email->subject = "Registering Testing";
-					$this->Email->from = "zawmyohtut@gmail.com";
-					$this->Email->smtpOptions = array(
-							'port' => '465',
-							'timeout' => '30',
-							'host' => 'ssl://smtp.gmail.com',
-							'username' => 'zawmyohtut@gmail',
-							'password' => 'whyalwaysme12345',
-					);
-
-					$this->Email->delivery = 'smtp';
-					if($this->Email->send()){
-						return true;
-					}
-					else{
-						echo $this->Email->smtpError;
-					}
-					$this->redirect('index');	
+					// send email to registered email.Uses gmail ssl.
+					$Email = new CakeEmail('gmail');
+					$Email->from(array('zaw@intersetive.com' => 'Game Test'));
+					$Email->to($this->request->data['User']['email']);
+					$Email->subject('Thanks for Registering!');
+					$Email->send('Start managing your games right away!');
+					$this->Session->setFlash("User Registration successful");
+					$this->redirect('index');		
 				}
 				else{
 
