@@ -1,5 +1,9 @@
 <?php
 
+/*
+	File to declare constant global variable and this file is to be included in bootstrap.php
+	file to be used across the whole project.
+*/
 //require_once 'messages.php';
 //db config
 //define('DB_HOST', 'localhost');
