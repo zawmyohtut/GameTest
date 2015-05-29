@@ -115,6 +115,7 @@
 
 		public function search($search = null){
 
+			// if user try to search through the URL
 			if(!isset($search)){
 
 				$data = $this->Game->find('all');				

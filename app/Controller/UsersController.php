@@ -1,4 +1,4 @@
-<?php 
+	<?php 
 
 	define('FACEBOOK_SDK_V4_SRC_DIR','../Vendor/fb/src/Facebook/');
 	require_once("../Vendor/fb/autoload.php");
@@ -12,6 +12,8 @@
 	use Facebook\GraphObject;
 	use Facebook\GraphUser;
 	use Facebook\GraphSessionInfo;
+
+	App::uses('AppController', 'Controller');
 
 	class UsersController extends AppController
 	{				
@@ -187,13 +189,13 @@
 				if($this->User->save($this->request->data)){
 					
 					// send email to registered email.Uses gmail ssl.
-					$Email = new CakeEmail('gmail');
-					$Email->from(array('zaw@intersetive.com' => 'Game Test'));
-					$Email->to($this->request->data['User']['email']);
-					$Email->subject('Thanks for Registering!');
-					$Email->send('Start managing your games right away!');
+					//$Email = new CakeEmail('gmail');
+					//$Email->from(array('zaw@intersetive.com' => 'Game Test'));
+					//$Email->to($this->request->data['User']['email']);
+					//$Email->subject('Thanks for Registering!');
+					//$Email->send('Start managing your games right away!');
 					$this->Session->setFlash("User Registration successful");
-					$this->redirect('index');		
+					return $this->redirect('index');		
 				}
 				else{
 

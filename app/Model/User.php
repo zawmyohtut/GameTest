@@ -10,6 +10,7 @@
 			return true;		
 		}	
 
+		
 		public $validate = array(
 
 			'last_name' => array(
