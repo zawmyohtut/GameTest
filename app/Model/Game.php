@@ -1,5 +1,13 @@
 <?php 
 
+/**
+* Application model for application.
+* 
+* Game model is related to games table in the database due to the naming convention.
+* Games data used in this application is mananged and manipulated through this model.
+*
+*/
+
 	class Game extends AppModel 
 	{
 		//$belongsTo keyword is used to link game model to category model.
@@ -7,6 +15,7 @@
 		public $belongsTo = 'Category';				
 
 		
+		//validation made for the input of the games add page.
 		public $validate = array(
 
 				'category_id' => array(
@@ -28,7 +37,7 @@
 					'isEmpty' => array(
 
 						'rule' => 'notEmpty',
-						'message' => 'Name cannot be empty!'						
+						'message' => 'Title cannot be empty!'						
 					)
 				),
 

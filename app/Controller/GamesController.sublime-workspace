@@ -1,0 +1,455 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"unittest",
+				"unittestpassword"
+			],
+			[
+				"assert",
+				"assert_options"
+			],
+			[
+				"Categ",
+				"Categories"
+			],
+			[
+				"type",
+				"type=〔attribute〕"
+			],
+			[
+				"build",
+				"buildPieChart〔function〕"
+			],
+			[
+				"ses",
+				"Session〔variable〕"
+			],
+			[
+				"session_star",
+				"session_start()	session Function"
+			],
+			[
+				"session_dest",
+				"session_destroy()	session Function"
+			],
+			[
+				"categ",
+				"categories"
+			],
+			[
+				"endof",
+				"endforeach	Language Construct"
+			],
+			[
+				"json_end",
+				"json_encode()	json Function"
+			],
+			[
+				"gam",
+				"gameCount"
+			],
+			[
+				"calc",
+				"calcTravelExpense〔function〕"
+			],
+			[
+				"Auth",
+				"AuthComponent〔class〕"
+			],
+			[
+				"set",
+				"setFlash〔function〕"
+			],
+			[
+				"red",
+				"redirectUrl〔function〕"
+			],
+			[
+				"print",
+				"print_r〔function〕"
+			],
+			[
+				"public",
+				"public〔keyword〕"
+			],
+			[
+				"game",
+				"$game〔variable〕"
+			],
+			[
+				"null",
+				"null〔keyword〕"
+			],
+			[
+				"Game",
+				"Game"
+			],
+			[
+				"App",
+				"AppController"
+			],
+			[
+				"AppControlle",
+				"AppController〔class〕"
+			],
+			[
+				"phpin",
+				"phpinfo()	standard Function"
+			],
+			[
+				"wid",
+				"widthScale"
+			],
+			[
+				"width",
+				"widthScale〔variable〕"
+			],
+			[
+				"trans",
+				"translate(20"
+			],
+			[
+				"ca",
+				"canvas"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"data",
+				"dataArray〔variable〕"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Add Repository"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				" install",
+				"Package Control: Install Package"
+			],
+			[
+				"installl",
+				"SublimeCodeIntel: Disable Live Autocompletion"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"dis",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/User.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Case/Model/UserTest.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/PagesController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Fixture/UserFixture.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Case/Controller/UsersControllerTest.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/database.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/AppController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Case/Model/sampleTest.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/add.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/Game.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/index.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/GamesController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/UsersController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/index.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/index.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/js/category_piechart_d3.js",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/css/category_piechart_style.css",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/CategoriesController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/css/style.css",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Layouts/default.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/js/category_piechart_d3js",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/css/cake.generic.css",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/Category.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/site_config.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/edit.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/js/d3.js",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/edit.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/composer.json",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/bootstrap.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/email.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/email.php.default",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/core.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/fb.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/facebook.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Layouts/_default.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/add.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/AppModel.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/login.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Elements/alert.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/edit.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/view.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/view.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Elements/quote_block.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/lib/Cake/Controller/Controller.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/view.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/common/header.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/add.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/delete.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/Categories.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/bin/cake.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/CatalogTest/app/Config/database.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/Catalog/app/Config/core.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/CatalogTest/app/Config/core.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/Catalog/app/Config/database.php",
+		"/Applications/mappstack-5.4.40-0/frameworks/laravel/vendor/laravel/framework/src/Illuminate/Redis/Database.php",
+		"/Applications/mappstack-5.4.40-0/apache2/conf/httpd.conf",
+		"/Users/zawmyohtut/Desktop/PHP installation ",
+		"/Applications/MAMP/conf/apache/httpd.conf",
+		"/Applications/MAMP/conf/apache/original/httpd.conf",
+		"/Applications/mappstack-5.4.40-0/frameworks/cakephp/app/Controller/AppController.php",
+		"/Applications/mappstack-5.4.40-0/frameworks/cakephp/app/View/App/welcome_message.ctp",
+		"/Applications/mappstack-5.4.40-0/frameworks/cakephp/app/Controller/PagesController.php",
+		"/Applications/mappstack-5.4.40-0/frameworks/cakephp/app/View/App",
+		"/Applications/mappstack-5.4.40-0/apache2/conf/bitnami/bitnami-apps-prefix.conf",
+		"/Users/zawmyohtut/version-control/recipes/.git/COMMIT_EDITMSG",
+		"/Users/zawmyohtut/version-control/recipes/cake-recipe.txt",
+		"/Users/zawmyohtut/version-control/recipes/.git/MERGE_MSG",
+		"/Users/zawmyohtut/version-control/recipes/burmese-recipe.txt",
+		"/Users/zawmyohtut/MyFirstRepo/.git/COMMIT_EDITMSG",
+		"/Users/zawmyohtut/MyFirstRepo/Reflection2.txt",
+		"/Users/zawmyohtut/version-control/asteroids/.git/COMMIT_EDITMSG",
+		"/Users/zawmyohtut/version-control/asteroids/game.js",
+		"/Users/zawmyohtut/Desktop/Log_Changes",
+		"/Users/zawmyohtut/Rmitsel/sel-mahara/log.txt",
+		"/Applications/MAMP/conf/php5.6.7/php.ini",
+		"/Applications/MAMP/htdocs/TestProject/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/TestProject/index.php",
+		"/Applications/XAMPP/xamppfiles/etc/httpd.conf",
+		"/Users/zawmyohtut/ActionSheetPicker-3.0/CHANGELOG.md",
+		"/Users/zawmyohtut/Rmitsel/sel-mahara/CHANGELOG.md",
+		"/Users/zawmyohtut/version-control/reflections/.git/COMMIT_EDITMSG",
+		"/Users/zawmyohtut/.bash_profile",
+		"/Users/zawmyohtut/Desktop/test.txt",
+		"/Users/zawmyohtut/git-prompt.sh",
+		"/Users/zawmyohtut/Downloads/git-completion.bash",
+		"/Users/zawmyohtut/version-control/reflections/lesson_1_reflections.txt",
+		"/Users/zawmyohtut/Desktop/game_new",
+		"/Applications/XAMPP/htdocs/TestProject/AnotherIndex.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/TestProject/TestProject.sublime-project",
+		"/Users/zawmyohtut/Library/Application Support/Sublime Text 3/Packages/User/PHP.sublime-build",
+		"/Users/zawmyohtut/Library/Application Support/Sublime Text 3/Packages/User/PHP-Browser-Preview.sublime-build",
+		"/Users/zawmyohtut/Documents/AnotherProject/AnotherProject.sublime-project",
+		"/Users/zawmyohtut/Documents/TestProject/test.js",
+		"/Users/zawmyohtut/Documents/TestProject/sftp-config.json",
+		"/Users/zawmyohtut/Documents/TestProject/enquiry.php",
+		"/Users/zawmyohtut/Documents/TestProject/TestProject.sublime-project",
+		"/Users/zawmyohtut/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"AppController",
+			"'));",
+			"index",
+			"login",
+			"search",
+			"{\n",
+			"Category",
+			"add",
+			"echo $session->flash()",
+			"setFlash",
+			"content",
+			"add",
+			"view",
+			"loadModule ",
+			"loadModule php5_module",
+			"8080",
+			"text.renderText",
+			"delaybeforebullet",
+			" this.delayBeforeBullet",
+			" this.delayBeforeBullet = 0",
+			" this.delayBeforeBullet = 10;",
+			"intl",
+			"php"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/PHP.sublime-build",
+	"project": "GamesController.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

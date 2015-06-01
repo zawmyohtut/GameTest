@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"unittest",
+				"unittestpassword"
+			],
+			[
+				"assert",
+				"assert_options"
+			],
+			[
+				"Categ",
+				"Categories"
+			],
+			[
+				"type",
+				"type=〔attribute〕"
+			],
+			[
+				"build",
+				"buildPieChart〔function〕"
+			],
+			[
+				"ses",
+				"Session〔variable〕"
+			],
+			[
+				"session_star",
+				"session_start()	session Function"
+			],
+			[
+				"session_dest",
+				"session_destroy()	session Function"
+			],
+			[
+				"categ",
+				"categories"
+			],
+			[
+				"endof",
+				"endforeach	Language Construct"
+			],
+			[
+				"json_end",
+				"json_encode()	json Function"
+			],
+			[
+				"gam",
+				"gameCount"
+			],
+			[
+				"calc",
+				"calcTravelExpense〔function〕"
+			],
+			[
 				"Auth",
 				"AuthComponent〔class〕"
 			],
@@ -76,34 +128,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/Controller/UsersController.php",
-			"settings":
-			{
-				"buffer_size": 3921,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Users/add.ctp",
-			"settings":
-			{
-				"buffer_size": 332,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/Model/User.php",
 			"settings":
 			{
-				"buffer_size": 231,
+				"buffer_size": 1116,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Controller/AppController.php",
+			"file": "app/Controller/PagesController.php",
 			"settings":
 			{
-				"buffer_size": 1354,
+				"buffer_size": 1934,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Test/Case/Model/UserTest.php",
+			"settings":
+			{
+				"buffer_size": 601,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/UsersController.php",
+			"settings":
+			{
+				"buffer_size": 7181,
 				"line_ending": "Unix"
 			}
 		}
@@ -115,10 +167,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 147.0,
-		"last_filter": "install",
+		"height": 392.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -152,10 +208,6 @@
 				"Set Syntax: PHP"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"dis",
 				"Package Control: Discover Packages"
 			]
@@ -183,47 +235,60 @@
 	[
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Elements",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users"
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Case",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Case/Controller",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Fixture"
 	],
 	"file_history":
 	[
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/AppModel.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/GamesController.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/Category.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/CategoriesController.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/UsersController.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/User.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Layouts/default.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/login.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Fixture/UserFixture.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Case/Controller/UsersControllerTest.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/database.php",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/AppController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Test/Case/Model/sampleTest.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/add.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/Game.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/index.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/GamesController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/User.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/UsersController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/index.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/index.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/js/category_piechart_d3.js",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/css/category_piechart_style.css",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/CategoriesController.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/css/style.css",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Layouts/default.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/js/category_piechart_d3js",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/css/cake.generic.css",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/Category.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/site_config.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/edit.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/js/d3.js",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/edit.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/composer.json",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/bootstrap.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/email.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/email.php.default",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/core.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/fb.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/facebook.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Layouts/_default.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/add.ctp",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/AppModel.php",
+		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/login.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Elements/alert.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/edit.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/add.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/index.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Layouts/_default.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Users/view.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/add.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/index.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Model/Game.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/index.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/view.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Elements/quote_block.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/lib/Cake/Controller/Controller.php",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/view.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/common/header.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/webroot/css/style.css",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/add.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/edit.ctp",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Games/edit.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories/delete.ctp",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/View/Categories",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Controller/Categories.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/database.php",
-		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/app/Config/core.php",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/GameTest/bin/cake.php",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/CatalogTest/app/Config/database.php",
 		"/Applications/mappstack-5.4.40-0/apache2/htdocs/Catalog/app/Config/core.php",
@@ -279,9 +344,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -289,6 +355,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"AppController",
+			"'));",
+			"index",
+			"login",
+			"search",
+			"{\n",
+			"Category",
+			"add",
 			"echo $session->flash()",
 			"setFlash",
 			"content",
@@ -321,24 +395,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Controller/UsersController.php",
+					"file": "app/Model/User.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3921,
+						"buffer_size": 1116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1884,
-								1884
+								225,
+								225
 							]
 						],
 						"settings":
@@ -347,21 +421,6 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -372,132 +431,57 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1102.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/View/Users/add.ctp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 332,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -507,43 +491,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/Model/User.php",
-					"semi_transient": false,
+					"buffer": 1,
+					"file": "app/Controller/PagesController.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 231,
+						"buffer_size": 1934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								195,
-								195
+								1147,
+								1147
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -554,64 +522,80 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 459.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/Controller/AppController.php",
+					"buffer": 2,
+					"file": "app/Test/Case/Model/UserTest.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1354,
+						"buffer_size": 601,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1170,
-								1170
+								405,
+								405
 							]
 						],
 						"settings":
@@ -620,21 +604,6 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -645,47 +614,156 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"incomplete_sync": null,
+							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Controller/UsersController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3799,
+								3799
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
