@@ -1,46 +1,8 @@
+<script type="text/javascript">
 
-<?php 
-        $this->extend('/common/header');
-        $this->assign('title','List of Categories');
-?>
+  function buildPieChart(){
 
-<?php echo $this->Html->css('category_piechart_style');?>
-
-<script src="http://d3js.org/d3.v3.min.js" type="text/javascript" charset="utf-8"></script>
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
-  
-<table>
-    <tr>        
-        <th>Name</th>
-        <th>Length_type</th>
-        <th>Actions</th>
-    </tr> 
-    <?php echo $this->Html->link('Add new Category',array('controller'=>'categories','action'=>'add'));?>
-    
-    <?php foreach ($categories as $category): ?>    
-    <tr>        
-        <td>
-            <?php echo $this->Html->link($category['Category']['name'],
-                    array('controller'=> 'categories','action' => 'view',$category['Category']['id']));?>
-        </td>
-        <td>        
-            <?php echo h($category['Category']['length_type']);?>
-        </td>
-
-        <td>
-            <?php echo $this->Html->link('Edit', array('controller' => 'categories', 'action' => 'edit',$category['Category']['id'])); ?>            
-        </td> 
-    </tr>
-    <?php endforeach; ?> 
-    
-    <?php unset($category); ?>
-</table>
-<h1>Number of Games by their Categories</h1>
-<div id="chart"></div>
-
-<script type='text/javascript'> 
-
-       var w = 800;
+        var w = 800;
         var h = 400;
         var r = h/2;
         var data = [];
@@ -137,5 +99,7 @@
                     tooltip.append('div')                 
                       .attr('class', 'value');            
 
+
+  }
 
 </script>

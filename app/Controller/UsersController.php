@@ -1,4 +1,4 @@
-<?php 
+	<?php 
 
 	define('FACEBOOK_SDK_V4_SRC_DIR','../Vendor/fb/src/Facebook/');
 	require_once("../Vendor/fb/autoload.php");
@@ -13,6 +13,8 @@
 	use Facebook\GraphUser;
 	use Facebook\GraphSessionInfo;
 
+	App::uses('AppController', 'Controller');
+
 	class UsersController extends AppController
 	{				
 		public function beforeFilter(){
@@ -21,9 +23,9 @@
 			$this->Auth->allow('add');
 		}
 
-		//make OAuth login request to facebook.
+		//make OAuth login redirectquest to facebook.
 		public function fblogin(){
-
+			
 			$this->autoRender = false;	
 			if (session_status() == PHP_SESSION_NONE) {
 				session_start();
@@ -71,11 +73,15 @@
 					$result = $this->User->findByEmail( $fb_data['email'] );
 					if(!empty( $result )){
 						if($this->Auth->login($result['User'])){
-							$this->Session->setFlash('You have successfully signed in with the facebook account!');
+
+							$this->Session->setFlash('You have previously signed in with the facebook account!.Now redirecting to the home page!.');
 							$this->redirect(BASE_PATH);
+
 						}else{
+
 							$this->Session->setFlash('Failed to sign in using facebook account!');
 							$this->redirect(BASE_PATH.'login');
+
 						}
 
 					}else{
@@ -89,7 +95,7 @@
 						if($this->User->save( $data )){
 							$data['id'] = $this->User->getLastInsertID();
 							if($this->Auth->login($data)){
-								$this->Session->setFlash('You have successfully signed in with the facebook account!');
+								$this->Session->setFlash('You have successfully signed in using your facebook account!');								
 								$this->redirect(BASE_PATH);
 							}else{
 								$this->Session->setFlash('Failed to sign in using facebook account!');
@@ -120,7 +126,6 @@
 							
 				if($this->Auth->login()){
 
-
 				    $this->redirect($this->Auth->redirectUrl());
 				}
 				else{
@@ -129,11 +134,11 @@
 					$this->redirect('login');
 				}				
 			}
-		}
+		}	
 
 		public function logout(){
 
-			$this->Auth->logout();
+			$this->Auth->logout();					
 			$this->Session->setFlash(__('You have been logged out!'));										
 			$this->redirect('login');
 		}	
@@ -150,7 +155,6 @@
 				);
 
 			$this->set($gameInformation);
-
 		}
 
 		public function view($id = null){
@@ -191,7 +195,7 @@
 					$Email->subject('Thanks for Registering!');
 					$Email->send('Start managing your games right away!');
 					$this->Session->setFlash("User Registration successful");
-					$this->redirect('index');		
+					return $this->redirect('index');		
 				}
 				else{
 

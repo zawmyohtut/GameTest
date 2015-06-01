@@ -30,6 +30,26 @@
 					)	
 				)
 			);
+
+
+		public function countCategories(){
+			$total = $this->find('all');
+			return count($total);
+		}
+
+		public function totalGamesCount(){
+			
+			$gamescount = 0;
+			$data = $this->find('all');
+
+			foreach($data as $category){
+
+				$gamescount += count($category['Game']);
+			}
+			return $gamescount;
+		}
+
+
 		
 			
 	}

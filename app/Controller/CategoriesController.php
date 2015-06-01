@@ -5,7 +5,7 @@
 
 		public function index(){
 
-			$this->set('categories',$this->Category->find('all'));
+			$this->set('categories',$this->Category->find('all'));			
 		}
 
 		public function view($id = null){
@@ -69,7 +69,8 @@
 			}		
 		}
 
-
+		// Logically, Category should not be able to be delete since it has the relationship with Game table and it act 
+		// as a forgien key in the Game table.	
 		public function delete($id = null){
 
 			if(!isset($id)){

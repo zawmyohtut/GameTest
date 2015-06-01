@@ -1,13 +1,13 @@
 
 <?php 
         $this->extend('/common/header');
-        $this->assign('title','U ownded this '.$count.' games.');
+        $this->assign('title','U own this '.$count.' games.');
 ?>
 
 <?php echo $this->Html->link('Add new games', array('controller' => 'games', 'action' => 'add')); ?>
+        
 <table>
-    <tr>
-        <th>Id</th>
+    <tr>        
         <th>Title</th>
         <th>Year</th>
         <th>Description</th>
@@ -16,8 +16,7 @@
     </tr> 
 
     <?php foreach ($games as $game): ?>    
-    <tr>
-        <td><?php echo h($game['Game']['id']); ?></td>
+    <tr>        
         <td>
             <?php echo $this->Html->link($game['Game']['title'],
                     array('controller'=> 'Games','action' => 'view',$game['Game']['id']));?>

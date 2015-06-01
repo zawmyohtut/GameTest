@@ -28,7 +28,7 @@
 					'isEmpty' => array(
 
 						'rule' => 'notEmpty',
-						'message' => 'Name cannot be empty!'						
+						'message' => 'Title cannot be empty!'						
 					)
 				),
 
