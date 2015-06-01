@@ -35,7 +35,6 @@ session_start();
 
 class AppController extends Controller {
 
-
 	public $components = array('Session','Auth','Email');
 
 	//Called first before all other controllers are called.
