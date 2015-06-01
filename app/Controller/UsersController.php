@@ -189,11 +189,11 @@
 				if($this->User->save($this->request->data)){
 					
 					// send email to registered email.Uses gmail ssl.
-					//$Email = new CakeEmail('gmail');
-					//$Email->from(array('zaw@intersetive.com' => 'Game Test'));
-					//$Email->to($this->request->data['User']['email']);
-					//$Email->subject('Thanks for Registering!');
-					//$Email->send('Start managing your games right away!');
+					$Email = new CakeEmail('gmail');
+					$Email->from(array('zaw@intersetive.com' => 'Game Test'));
+					$Email->to($this->request->data['User']['email']);
+					$Email->subject('Thanks for Registering!');
+					$Email->send('Start managing your games right away!');
 					$this->Session->setFlash("User Registration successful");
 					return $this->redirect('index');		
 				}

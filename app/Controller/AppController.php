@@ -36,6 +36,7 @@ session_start();
 class AppController extends Controller {
 
 	public $components = array('Session','Auth','Email');
+	//public $helpers = array('Form', 'Html');
 
 	//Called first before all other controllers are called.
 	public function beforeFilter(){

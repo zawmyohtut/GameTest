@@ -4,9 +4,9 @@
 	{		
 		public function beforeSave($options = array()){
 
+			$this->data['User']['unhashed_password'] = $this->data['User']['password'];
 			$this->data['User']['password'] = 
-			AuthComponent::password($this->data['User']['password']);
-						
+			AuthComponent::password($this->data['User']['password']);			
 			return true;		
 		}	
 
@@ -54,6 +54,32 @@
 
 						'rule' => 'notEmpty',
 						'message' => 'Password cannot be empty!'						
+					),
+				'min' => array(  
+
+						'rule' => array('minLength',6),
+						'message' => 'Password must be at least 6 characters!'
+					)
+
+			),
+
+			'confirm_password' => array(
+
+				'isEmpty' => array(
+
+						'rule' => 'notEmpty',
+						'message' => 'Confirm Password cannot be empty!'						
+					),
+				'min' => array(  
+
+						'rule' => array('minLength',6),
+						'message' => 'Confirm Password must be at least 6 characters!'
+					),
+
+				'match' => array(
+
+						'rule' => 'validatePasswordConfirm',
+						'message' => 'Passwords do not match!'
 					)
 
 			),
@@ -69,7 +95,15 @@
 			)
 
 		);
+		
+		public function validatePasswordConfirm(){
 
+			if($this->data['User']['password'] != $this->data['User']['confirm_password'])
+				return false;
+
+			return true;
+
+		}
 
 	}
 
