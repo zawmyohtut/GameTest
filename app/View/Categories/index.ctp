@@ -12,7 +12,7 @@
 <table>
     <tr>        
         <th>Name</th>
-        <th>Length_type</th>
+        <th>Game play hours</th>
         <th>Actions</th>
     </tr> 
     <?php echo $this->Html->link('Add new Category',array('controller'=>'categories','action'=>'add'));?>
@@ -36,6 +36,8 @@
     <?php unset($category); ?>
 </table>
 <h1>Number of Games by their Categories</h1>
+
+<!-- Code below is the D3 Javascript library i.e is used to create the pie chart as shown in category index page. -->
 <div id="chart"></div>
 
 <script type='text/javascript'> 
