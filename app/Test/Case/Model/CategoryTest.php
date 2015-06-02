@@ -22,17 +22,6 @@
 			$this->assertEquals($this->Category->countCategories(),6,"Category count test failed!");			
 		}
 
-		public function testGameExist(){
-
-			$flag;
-
-			if($this->Category->totalGamesCount > 0)
-				$flag = true;
-			else 
-				$flag = false;
-
-			$this->assertEquals($flag,true,"Total games count not passed passed!");		
-		}
 	}
 
 

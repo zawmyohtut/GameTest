@@ -47,23 +47,7 @@
 			$total = $this->find('all');
 			return count($total);
 		}
-
-		// Method create for sole purpose of unit testing.
-		public function totalGamesCount(){
-			
-			$gamescount = 0;
-			$data = $this->find('all');
-
-			foreach($data as $category){
-
-				$gamescount += count($category['Game']);
-			}
-			return $gamescount;
-		}
-
-
-		
-			
+					
 	}
 
 ?>

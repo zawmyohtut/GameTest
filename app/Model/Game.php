@@ -63,6 +63,19 @@
 				)
 			);
 
+			//Method to unit test
+			public function countSportCategory(){
+
+				$allGames = $this->find('all');
+				$sportCount = 0;
+
+				foreach($allGames as $game):				
+					if($game['Category']['id'] == '2')
+						$sportCount++;
+				endforeach;
+
+				return $sportCount;
+			}
 	}
 
 ?>
